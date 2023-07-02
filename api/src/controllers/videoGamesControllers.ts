@@ -14,7 +14,18 @@ export const getVideogames = async ( req: Request, res: Response) => {
 
 export const createVideogame = async ( req: Request, res: Response) => {
     try {
-        
+        const { title, image, price, description, category, platform } = req.body
+        const VideogamesModels = getModelForClass(Videogame)
+        const newVideogame = new VideogamesModels({
+            title,
+            image,
+            price,
+            description,
+            category,
+            platform
+        })
+        await newVideogame.save()
+        res.status(200).json(newVideogame)
     } catch (error) {
         res.status(404).json(error)
     }
@@ -22,7 +33,10 @@ export const createVideogame = async ( req: Request, res: Response) => {
 
 export const deleteVideogame = async ( req: Request, res: Response) => {
     try {
-        
+        const { id } = req.params
+        const VideogamesModels = getModelForClass(Videogame)
+        const dtVideogame = await VideogamesModels.findByIdAndDelete(id)
+        res.status(200).json(dtVideogame)
     } catch (error) {
         res.status(404).json(error)
     }

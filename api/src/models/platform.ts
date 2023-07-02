@@ -7,8 +7,8 @@ import { prop, modelOptions, getModelForClass } from "@typegoose/typegoose"
 })
 
 export class Platform {
-    @prop({type: String, require: true})
-    platsform: string
+    @prop({type: String, require: true, unique: true})
+    name: string
 }
 
 export default getModelForClass(Platform)

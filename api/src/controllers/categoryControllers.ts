@@ -30,7 +30,7 @@ export const deleteCategory =async (req: Request, res: Response) => {
     try {
         const { _id } = req.body
         const CategoryModel = getModelForClass(Category)
-        const dtCategory = await CategoryModel.deleteOne(_id)
+        const dtCategory = await CategoryModel.findByIdAndDelete(_id)
         res.status(200).json(dtCategory)
     } catch (error) {
         res.status(404).json(error)

@@ -7,7 +7,7 @@ import { prop, modelOptions, getModelForClass } from "@typegoose/typegoose"
 })
 
 export class Category {
-    @prop({type: String, required: true})
+    @prop({type: String, required: true, unique: true})
     name: string
 }
 
