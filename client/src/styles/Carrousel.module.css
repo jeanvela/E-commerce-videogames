@@ -1,0 +1,16 @@
+.section_carrousel {
+    padding: 4rem 1rem;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 10px 0 10px;
+}
+
+.img {
+    height: 345px;
+    width: 345px;
+    object-fit: cover;
+    /* object-position: center; */
+}
