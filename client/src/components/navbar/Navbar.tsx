@@ -53,9 +53,9 @@ const Navbar = (): JSX.Element => {
                             <button onClick={handleMenuClick} className={style.toggle}>
                                 {
                                     isOpen? <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
                                         </svg> : <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
                                         </svg>
                                 }
                             </button>
@@ -64,9 +64,9 @@ const Navbar = (): JSX.Element => {
                                     <ul className={style.ul}>
                                         <li className={style.links}><Link to='/' onClick={handleMenuClick}>Home</Link></li>
                                         <li className={style.links}><Link to='/videogame' onClick={handleMenuClick}>Video games</Link></li>
-                                        <li className={style.links}><Link to='/' onClick={handleMenuClick}>Services</Link></li>
+                                        {/* <li className={style.links}><Link to='/' onClick={handleMenuClick}>Services</Link></li>
                                         <li className={style.links}><Link to='/' onClick={handleMenuClick}>Pricing</Link></li>
-                                        <li className={style.links}><Link to='/' onClick={handleMenuClick}>Contact</Link></li>
+                                        <li className={style.links}><Link to='/' onClick={handleMenuClick}>Contact</Link></li> */}
                                     </ul>
                                 </div>
                             }
@@ -80,7 +80,7 @@ const Navbar = (): JSX.Element => {
                                     <Link to="/videogames" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Video games</Link>
                                 </li>
                                 <li>
-                                    <Link to="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">category</Link>
+                                    {/* <Link to="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">category</Link> */}
                                 </li>
                                 {/* <li>
                                     <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
