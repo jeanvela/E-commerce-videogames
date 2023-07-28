@@ -1,6 +1,6 @@
-import { createSlice, PayloadAction, ThunkAction, Action } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction} from "@reduxjs/toolkit";
 import axios from "axios";
-import { RootState, AppDispatch} from '../../app/store'
+import { AppDispatch } from '../../app/store'
 
 interface Product {
     _id: string,
